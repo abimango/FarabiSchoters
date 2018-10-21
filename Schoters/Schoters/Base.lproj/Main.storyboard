@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Schoters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your Schoters Home Page" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yny-i8-yNh">
+                                <rect key="frame" x="15" y="60" width="345" height="48.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLH-lp-EMI">
+                                <rect key="frame" x="15" y="617" width="345" height="40"/>
+                                <color key="backgroundColor" red="0.37254901960784315" green="0.60784313725490191" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="q0b-Ft-D35"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneHomeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWz-mV-6As"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEu-Yf-Dpw">
+                                <rect key="frame" x="15" y="128.5" width="345" height="57.5"/>
+                                <string key="text">Pick 5 top scholarship categories that you are interested to help us deliver the most relevant information with your preferences</string>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-Bl-5Id">
+                                <rect key="frame" x="15" y="210" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MPq-rk-EaH"/>
+                                    <constraint firstAttribute="width" constant="120" id="VSx-x7-Vr1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="S1/Bachelor">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsc-4P-396">
+                                <rect key="frame" x="145" y="210" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VQi-zk-6tv"/>
+                                    <constraint firstAttribute="width" constant="100" id="us9-n2-mOe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="S2/Master">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WF-xB-Sw3">
+                                <rect key="frame" x="15" y="354" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8kN-UH-kPC"/>
+                                    <constraint firstAttribute="height" constant="40" id="bjb-cK-f8X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Technology">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFM-uJ-34A">
+                                <rect key="frame" x="255" y="210" width="70" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="clR-sN-5ms"/>
+                                    <constraint firstAttribute="width" constant="70" id="dgA-eI-A2m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="S3/PhD">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoZ-Kr-xoy">
+                                <rect key="frame" x="15" y="258" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="O1r-ww-NU0"/>
+                                    <constraint firstAttribute="height" constant="40" id="d3e-oe-f0R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Short Courses">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCc-pT-J9f">
+                                <rect key="frame" x="15" y="402" width="140" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="gzy-2n-DMm"/>
+                                    <constraint firstAttribute="height" constant="40" id="met-na-h3a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Motivation Letter">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyM-FH-2EB">
+                                <rect key="frame" x="165" y="402" width="160" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Cjc-yW-qpL"/>
+                                    <constraint firstAttribute="height" constant="40" id="fy4-vk-7Oa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Personalized Mentor">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCn-Ab-eXQ">
+                                <rect key="frame" x="145" y="258" width="70" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NBs-xs-gUK"/>
+                                    <constraint firstAttribute="width" constant="70" id="aTO-4G-GEw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Degree">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJh-Vv-dhE">
+                                <rect key="frame" x="225" y="258" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="05c-Ws-nHH"/>
+                                    <constraint firstAttribute="width" constant="100" id="M3s-oB-9GU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Non-Degree">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyj-X9-Qrn">
+                                <rect key="frame" x="15" y="306" width="130" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kYD-rh-PGu"/>
+                                    <constraint firstAttribute="width" constant="130" id="yvo-mX-nkU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Medical Degree">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFb-Od-mPW">
+                                <rect key="frame" x="155" y="306" width="110" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7m3-F4-9gO"/>
+                                    <constraint firstAttribute="width" constant="110" id="Mk8-PJ-ehX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Post Doctoral">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayi-rb-v2B">
+                                <rect key="frame" x="15" y="450" width="110" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="BfP-2d-Rf1"/>
+                                    <constraint firstAttribute="height" constant="40" id="KhG-PH-mOl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Professional">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m85-t9-bN8">
+                                <rect key="frame" x="135" y="450" width="90" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="I19-k3-KqU"/>
+                                    <constraint firstAttribute="width" constant="90" id="p6e-cW-DEC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="IELTS Test">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5E-wm-sGc">
+                                <rect key="frame" x="125" y="354" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ahk-37-WJ1"/>
+                                    <constraint firstAttribute="height" constant="40" id="iPm-yp-wjb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="CV Writing">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nok-IP-UwW">
+                                <rect key="frame" x="235" y="354" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hjF-Ap-dHf"/>
+                                    <constraint firstAttribute="width" constant="100" id="myv-Sb-1oG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Consultation">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfo-yo-q3h">
+                                <rect key="frame" x="275" y="306" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="NGq-d7-dvH"/>
+                                    <constraint firstAttribute="height" constant="40" id="fuP-FP-3eG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Research">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H72-uB-uhm">
+                                <rect key="frame" x="15" y="498" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ggz-1z-ctz"/>
+                                    <constraint firstAttribute="height" constant="40" id="M9O-Mo-IIa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="TOEFL Test">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftx-Y9-eCL">
+                                <rect key="frame" x="125" y="498" width="60" height="40"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.76862745098039209" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3sh-Wc-ggx"/>
+                                    <constraint firstAttribute="width" constant="60" id="fxl-sK-jKz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="Essay">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oEu-Yf-Dpw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="12r-yr-8MN"/>
+                            <constraint firstItem="Lsc-4P-396" firstAttribute="leading" secondItem="5Og-Bl-5Id" secondAttribute="trailing" constant="10" id="1YH-gu-5Mc"/>
+                            <constraint firstItem="H72-uB-uhm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="2LJ-W3-rcQ"/>
+                            <constraint firstItem="Bfo-yo-q3h" firstAttribute="leading" secondItem="eFb-Od-mPW" secondAttribute="trailing" constant="10" id="3NG-fI-asi"/>
+                            <constraint firstItem="rCn-Ab-eXQ" firstAttribute="top" secondItem="Lsc-4P-396" secondAttribute="bottom" constant="8" id="3jT-Td-8Kj"/>
+                            <constraint firstItem="hJh-Vv-dhE" firstAttribute="leading" secondItem="rCn-Ab-eXQ" secondAttribute="trailing" constant="10" id="3py-ld-HrN"/>
+                            <constraint firstItem="oyM-FH-2EB" firstAttribute="leading" secondItem="zCc-pT-J9f" secondAttribute="trailing" constant="10" id="3ts-64-yID"/>
+                            <constraint firstItem="H72-uB-uhm" firstAttribute="top" secondItem="ayi-rb-v2B" secondAttribute="bottom" constant="8" id="6JK-ld-UsT"/>
+                            <constraint firstItem="5Og-Bl-5Id" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="75a-Ln-5a3"/>
+                            <constraint firstItem="nok-IP-UwW" firstAttribute="top" secondItem="eFb-Od-mPW" secondAttribute="bottom" constant="8" id="8ih-Aq-73x"/>
+                            <constraint firstItem="zCc-pT-J9f" firstAttribute="top" secondItem="7WF-xB-Sw3" secondAttribute="bottom" constant="8" id="A0H-C8-Dd5"/>
+                            <constraint firstItem="ftx-Y9-eCL" firstAttribute="top" secondItem="m85-t9-bN8" secondAttribute="bottom" constant="8" id="Ang-GP-r27"/>
+                            <constraint firstItem="KoZ-Kr-xoy" firstAttribute="top" secondItem="5Og-Bl-5Id" secondAttribute="bottom" constant="8" id="CcJ-NC-J8h"/>
+                            <constraint firstItem="I5E-wm-sGc" firstAttribute="top" secondItem="Yyj-X9-Qrn" secondAttribute="bottom" constant="8" id="Ccz-gG-19X"/>
+                            <constraint firstItem="jFM-uJ-34A" firstAttribute="top" secondItem="oEu-Yf-Dpw" secondAttribute="bottom" constant="24" id="DEq-tA-Cmu"/>
+                            <constraint firstItem="ayi-rb-v2B" firstAttribute="top" secondItem="zCc-pT-J9f" secondAttribute="bottom" constant="8" id="Ee1-g2-b8h"/>
+                            <constraint firstItem="hJh-Vv-dhE" firstAttribute="top" secondItem="jFM-uJ-34A" secondAttribute="bottom" constant="8" id="Hcw-jP-Gs0"/>
+                            <constraint firstItem="5Og-Bl-5Id" firstAttribute="top" secondItem="oEu-Yf-Dpw" secondAttribute="bottom" constant="24" id="Kmq-jl-UkR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bLH-lp-EMI" secondAttribute="bottom" constant="10" id="Mng-rx-Gy1"/>
+                            <constraint firstItem="Yyj-X9-Qrn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="O3J-uB-1rN"/>
+                            <constraint firstItem="eFb-Od-mPW" firstAttribute="top" secondItem="rCn-Ab-eXQ" secondAttribute="bottom" constant="8" id="Pam-A2-ahb"/>
+                            <constraint firstItem="7WF-xB-Sw3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="QHZ-GF-uEt"/>
+                            <constraint firstItem="nok-IP-UwW" firstAttribute="leading" secondItem="I5E-wm-sGc" secondAttribute="trailing" constant="10" id="UfJ-6F-QHF"/>
+                            <constraint firstItem="Lsc-4P-396" firstAttribute="top" secondItem="oEu-Yf-Dpw" secondAttribute="bottom" constant="24" id="VJ8-zn-aUD"/>
+                            <constraint firstItem="ayi-rb-v2B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="WWU-4Y-1cf"/>
+                            <constraint firstItem="jFM-uJ-34A" firstAttribute="leading" secondItem="Lsc-4P-396" secondAttribute="trailing" constant="10" id="Xik-gf-92H"/>
+                            <constraint firstItem="7WF-xB-Sw3" firstAttribute="top" secondItem="Yyj-X9-Qrn" secondAttribute="bottom" constant="8" id="Y1W-iD-dVC"/>
+                            <constraint firstItem="oEu-Yf-Dpw" firstAttribute="top" secondItem="yny-i8-yNh" secondAttribute="bottom" constant="20" id="YKG-au-dhv"/>
+                            <constraint firstItem="eFb-Od-mPW" firstAttribute="leading" secondItem="Yyj-X9-Qrn" secondAttribute="trailing" constant="10" id="am5-Hg-gDf"/>
+                            <constraint firstItem="bLH-lp-EMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="axQ-bB-A7W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bLH-lp-EMI" secondAttribute="trailing" constant="15" id="cR2-2V-yq7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oEu-Yf-Dpw" secondAttribute="trailing" constant="15" id="cbw-1y-foh"/>
+                            <constraint firstItem="I5E-wm-sGc" firstAttribute="leading" secondItem="7WF-xB-Sw3" secondAttribute="trailing" constant="10" id="d53-NX-RsF"/>
+                            <constraint firstItem="yny-i8-yNh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="dmt-45-dC5"/>
+                            <constraint firstItem="yny-i8-yNh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="fkl-3d-CwB"/>
+                            <constraint firstItem="m85-t9-bN8" firstAttribute="leading" secondItem="ayi-rb-v2B" secondAttribute="trailing" constant="10" id="kwA-DZ-L1d"/>
+                            <constraint firstItem="Yyj-X9-Qrn" firstAttribute="top" secondItem="KoZ-Kr-xoy" secondAttribute="bottom" constant="8" id="l3a-pI-IUg"/>
+                            <constraint firstItem="m85-t9-bN8" firstAttribute="top" secondItem="zCc-pT-J9f" secondAttribute="bottom" constant="8" id="lSP-u5-Gsh"/>
+                            <constraint firstItem="zCc-pT-J9f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="lpl-dv-npR"/>
+                            <constraint firstItem="KoZ-Kr-xoy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="nKn-J8-Pns"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yny-i8-yNh" secondAttribute="trailing" constant="15" id="qbL-ME-bMK"/>
+                            <constraint firstItem="ftx-Y9-eCL" firstAttribute="leading" secondItem="H72-uB-uhm" secondAttribute="trailing" constant="10" id="wbk-8e-uCc"/>
+                            <constraint firstItem="oyM-FH-2EB" firstAttribute="top" secondItem="I5E-wm-sGc" secondAttribute="bottom" constant="8" id="yKg-7S-y7Z"/>
+                            <constraint firstItem="Bfo-yo-q3h" firstAttribute="top" secondItem="hJh-Vv-dhE" secondAttribute="bottom" constant="8" id="z8d-bi-GVz"/>
+                            <constraint firstItem="rCn-Ab-eXQ" firstAttribute="leading" secondItem="KoZ-Kr-xoy" secondAttribute="trailing" constant="10" id="zWQ-Wi-tK9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bachelorButton" destination="5Og-Bl-5Id" id="omI-Mu-HjB"/>
+                        <outlet property="consultationButton" destination="nok-IP-UwW" id="xGa-em-6D4"/>
+                        <outlet property="cvWritingButton" destination="I5E-wm-sGc" id="TYO-oW-RMw"/>
+                        <outlet property="degreeButton" destination="rCn-Ab-eXQ" id="M7l-Go-QJd"/>
+                        <outlet property="descriptionOfHeader" destination="oEu-Yf-Dpw" id="5hc-2C-glg"/>
+                        <outlet property="doneButton" destination="bLH-lp-EMI" id="dbK-OU-8Vg"/>
+                        <outlet property="essayButton" destination="ftx-Y9-eCL" id="FKk-Rf-ekJ"/>
+                        <outlet property="header" destination="yny-i8-yNh" id="pra-9u-ahU"/>
+                        <outlet property="ieltsButton" destination="m85-t9-bN8" id="2xV-fc-E1R"/>
+                        <outlet property="masterButton" destination="Lsc-4P-396" id="deC-Ou-RCX"/>
+                        <outlet property="medicalDegreeButton" destination="Yyj-X9-Qrn" id="9HG-AU-K2s"/>
+                        <outlet property="motivationLetterButton" destination="zCc-pT-J9f" id="pfP-mi-CxE"/>
+                        <outlet property="nonDegreeButton" destination="hJh-Vv-dhE" id="uxd-It-iwr"/>
+                        <outlet property="personalizedMentorButton" destination="oyM-FH-2EB" id="O1i-ND-vOh"/>
+                        <outlet property="phdButton" destination="jFM-uJ-34A" id="Sqs-Px-WHy"/>
+                        <outlet property="postDoctoralButton" destination="eFb-Od-mPW" id="CNY-5k-bsk"/>
+                        <outlet property="professionalButton" destination="ayi-rb-v2B" id="RrS-ov-Rzc"/>
+                        <outlet property="researchButton" destination="Bfo-yo-q3h" id="aZU-9c-2XF"/>
+                        <outlet property="shortCoursesButton" destination="KoZ-Kr-xoy" id="RKk-kI-mD1"/>
+                        <outlet property="technologyButton" destination="7WF-xB-Sw3" id="iBC-AY-mOD"/>
+                        <outlet property="toeflButton" destination="H72-uB-uhm" id="J8s-lt-T6R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="106.59670164917542"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="qEW-56-Ydd">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="jqH-bO-Tfz" customClass="HomeViewController" customModule="Schoters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n3K-aM-iIr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bJz-fr-xSS">
+                                <rect key="frame" x="15" y="100" width="345" height="518"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScholarshipCell" rowHeight="109" id="BDV-Ge-wJy" customClass="ScholarshipCell" customModule="Schoters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="345" height="109"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BDV-Ge-wJy" id="KaR-WZ-tcb">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="108.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Deskripsi Indonesia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqE-5L-xnL">
+                                                    <rect key="frame" x="114" y="38" width="259" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Description English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOT-Xv-31R">
+                                                    <rect key="frame" x="114" y="19" width="259" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryX-FR-fCc">
+                                                    <rect key="frame" x="114" y="3" width="259" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MfK-Ta-CDd">
+                                                    <rect key="frame" x="3" y="3" width="109" height="103"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="109" id="n27-qB-8ND"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ryX-FR-fCc" firstAttribute="top" secondItem="KaR-WZ-tcb" secondAttribute="top" constant="3" id="5BQ-7z-jfx"/>
+                                                <constraint firstAttribute="bottom" secondItem="MfK-Ta-CDd" secondAttribute="bottom" constant="2.5" id="8Fm-60-qAk"/>
+                                                <constraint firstItem="GOT-Xv-31R" firstAttribute="top" secondItem="ryX-FR-fCc" secondAttribute="bottom" constant="-2" id="LDL-8K-WYL"/>
+                                                <constraint firstItem="iqE-5L-xnL" firstAttribute="top" secondItem="GOT-Xv-31R" secondAttribute="bottom" constant="-2" id="Mlx-R4-caf"/>
+                                                <constraint firstItem="GOT-Xv-31R" firstAttribute="trailing" secondItem="iqE-5L-xnL" secondAttribute="trailing" id="RKF-iW-37a"/>
+                                                <constraint firstItem="MfK-Ta-CDd" firstAttribute="top" secondItem="KaR-WZ-tcb" secondAttribute="top" constant="3" id="S0E-KE-uXf"/>
+                                                <constraint firstItem="GOT-Xv-31R" firstAttribute="leading" secondItem="MfK-Ta-CDd" secondAttribute="trailing" constant="2" id="Uuo-Pe-DQd"/>
+                                                <constraint firstItem="ryX-FR-fCc" firstAttribute="trailing" secondItem="GOT-Xv-31R" secondAttribute="trailing" id="aZl-ub-XaY"/>
+                                                <constraint firstItem="iqE-5L-xnL" firstAttribute="leading" secondItem="MfK-Ta-CDd" secondAttribute="trailing" constant="2" id="bFY-Gk-9fY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ryX-FR-fCc" secondAttribute="trailing" constant="-43" id="cfR-sb-Uaw"/>
+                                                <constraint firstItem="ryX-FR-fCc" firstAttribute="leading" secondItem="MfK-Ta-CDd" secondAttribute="trailing" constant="2" id="nK6-ek-lLj"/>
+                                                <constraint firstAttribute="bottom" secondItem="iqE-5L-xnL" secondAttribute="bottom" constant="49.5" id="no4-my-DvY"/>
+                                                <constraint firstItem="iqE-5L-xnL" firstAttribute="leading" secondItem="MfK-Ta-CDd" secondAttribute="trailing" constant="2" id="oEd-CO-RxO"/>
+                                                <constraint firstItem="MfK-Ta-CDd" firstAttribute="leading" secondItem="KaR-WZ-tcb" secondAttribute="leading" constant="3" id="vcT-6n-F43"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="scholarshipDesIndo" destination="iqE-5L-xnL" id="wrY-af-Aqt"/>
+                                            <outlet property="scholarshipDescEng" destination="GOT-Xv-31R" id="WA6-c3-YFF"/>
+                                            <outlet property="scholarshipImage" destination="MfK-Ta-CDd" id="8Te-8I-1X0"/>
+                                            <outlet property="scholarshipName" destination="ryX-FR-fCc" id="21S-Hd-o95"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jqH-bO-Tfz" id="ltm-Fc-l9A"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiR-XG-4Ki">
+                                <rect key="frame" x="15" y="60" width="345" height="25"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UQY-aZ-nqv" firstAttribute="trailing" secondItem="ZiR-XG-4Ki" secondAttribute="trailing" constant="15" id="9OP-8o-dit"/>
+                            <constraint firstItem="bJz-fr-xSS" firstAttribute="bottom" secondItem="UQY-aZ-nqv" secondAttribute="bottom" id="D3T-xO-dQa"/>
+                            <constraint firstItem="bJz-fr-xSS" firstAttribute="top" secondItem="ZiR-XG-4Ki" secondAttribute="bottom" constant="15" id="DSe-xf-LEP"/>
+                            <constraint firstItem="ZiR-XG-4Ki" firstAttribute="leading" secondItem="UQY-aZ-nqv" secondAttribute="leading" constant="15" id="EyT-DB-N4z"/>
+                            <constraint firstItem="bJz-fr-xSS" firstAttribute="leading" secondItem="UQY-aZ-nqv" secondAttribute="leading" constant="15" id="FM9-aS-fjQ"/>
+                            <constraint firstItem="bJz-fr-xSS" firstAttribute="trailing" secondItem="UQY-aZ-nqv" secondAttribute="trailing" constant="-15" id="UqX-6D-Etb"/>
+                            <constraint firstItem="ZiR-XG-4Ki" firstAttribute="top" secondItem="UQY-aZ-nqv" secondAttribute="top" constant="40" id="vYK-4b-dTs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UQY-aZ-nqv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="XeS-7S-7NA"/>
+                    <connections>
+                        <outlet property="scholarshipTableView" destination="bJz-fr-xSS" id="EOZ-Rq-ZNF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ei9-hi-zWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="106.59670164917542"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="9pW-sk-0cm">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="m77-QX-LkY" customClass="SettingsViewController" customModule="Schoters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4af-t2-tRN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsy-q3-qd2">
+                                <rect key="frame" x="14" y="60" width="346" height="25"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDN-Xe-d6w">
+                                <rect key="frame" x="16" y="311" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.37254901960784315" green="0.60784313725490191" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Personalize your Home Page">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="personalizeHomePageButtonClicked:" destination="m77-QX-LkY" eventType="touchUpInside" id="jj0-jA-f4d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gsy-q3-qd2" firstAttribute="top" secondItem="Sa4-uW-1oH" secondAttribute="top" constant="40" id="0pT-Rp-ObW"/>
+                            <constraint firstItem="Sa4-uW-1oH" firstAttribute="trailing" secondItem="gsy-q3-qd2" secondAttribute="trailing" constant="15" id="Cie-xu-9KX"/>
+                            <constraint firstItem="gsy-q3-qd2" firstAttribute="leading" secondItem="Sa4-uW-1oH" secondAttribute="leading" constant="14" id="d3y-HO-Tbt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sa4-uW-1oH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="o6g-Gp-ghg"/>
+                    <connections>
+                        <outlet property="personalizeHomePageButton" destination="jDN-Xe-d6w" id="s1e-xL-8eC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydb-rk-0UE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="911.69415292353835"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Lkb-Cj-JLi">
+            <objects>
+                <tabBarController storyboardIdentifier="SchotersTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="ql2-hL-Qxa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XK7-en-XLb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.37254901960784315" green="0.60784313725490191" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jqH-bO-Tfz" kind="relationship" relationship="viewControllers" id="SHs-k2-sDW"/>
+                        <segue destination="m77-QX-LkY" kind="relationship" relationship="viewControllers" id="9xY-r6-MVZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9C0-Im-fnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>
